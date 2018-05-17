@@ -1,8 +1,6 @@
 defmodule GildedRoseTest do
   use ExUnit.Case
-  doctest GildedRose
 
-  test "greets the world" do
-    assert GildedRose.hello() == :world
+  test "begin the journey of refactoring" do
   end
 end
