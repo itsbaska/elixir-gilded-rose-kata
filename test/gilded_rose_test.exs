@@ -25,7 +25,7 @@ defmodule GildedRoseTest do
     assert GildedRose.update_quality([%Item{name: "Sulfuras, Hand of Ragnaros", sell_in: 0, quality: 0}]) == [%Item{name: "Sulfuras, Hand of Ragnaros", sell_in: 0, quality: 0}]
   end
 
-  test "update Backstage passes to a TAFKAL80ETC concert -- sell in < 10 > 5" do 
+  test "update Backstage passes to a TAFKAL80ETC concert -- 5 < sell in < 10 " do 
     assert GildedRose.update_quality([%Item{name: "Backstage passes to a TAFKAL80ETC concert", sell_in: 9, quality: 2}]) == [%Item{name: "Backstage passes to a TAFKAL80ETC concert", sell_in: 8, quality: 4}]
   end
 
