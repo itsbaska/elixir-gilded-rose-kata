@@ -14,14 +14,15 @@ defimpl GildedRose.Update, for: Item do
   end
 
   def struct_type(%Item{} = item) do
-    IO.puts "here"
-    IO.inspect item
     case item.name do
       "Aged Brie" ->
-        IO.puts "in case"
-        # item.quality + 1
-        # item.sell_in - 1
         Item.Brie
+      "Sulfuras, Hand of Ragnaros" ->
+        Item.Sulfuras
+      "Backstage passes to a TAFKAL80ETC concert" ->
+        Item.Pass
+      _ ->
+        Item.Regular
     end
     
   end
